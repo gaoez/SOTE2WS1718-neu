@@ -1,9 +1,26 @@
-function plus(a, b){
-	z = a + b;
-	return z;
+var a,b,result;
+function setValue(){
+	a= Number(document.getElementById("a").value);
+	b= Number(document.getElementById("b").value);
+	
 }
-
-function minus (a, b){
-	z = a- b;
-	return z;
+function add(){
+	setValue();
+	result= a+b;
+	alert("Das Ergebnis ist"+ " "+ result);
+}
+function sub(){
+	setValue();
+	result= a-b;
+	alert("Das Ergebnis ist"+ " "+ result);
+}
+function mult(){
+	setValue();
+	result= a*b;
+	alert("Das Ergebnis ist"+ " "+ result);
+}
+function div(){
+	setValue();
+	result= a/b;
+	alert("Das Ergebnis ist"+ " "+ result);
 }
